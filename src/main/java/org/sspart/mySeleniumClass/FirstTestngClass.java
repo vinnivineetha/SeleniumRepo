@@ -1,50 +1,95 @@
 package org.sspart.mySeleniumClass;
 
+import static org.testng.Assert.assertEquals;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class FirstTestngClass {
+import junit.framework.Assert;
 
-	WebDriver driver=null;
-	@BeforeTest
-	public void case1(){
-		
-		   System.out.println( "before test started" );
-	        System.setProperty("webdriver.chrome.driver","C:/Users/vinni/Downloads/chromedriver.exe");
-	        WebDriver driver=new ChromeDriver();
-	        driver.manage().window().maximize();
-	        driver.get("https://www.amazon.in/");     
-	        
+public class FirstTestngClass  {
+	 WebDriver driver=null;
+	 Properties properties=null;
+  @BeforeTest
+  public void beforetest(){
+	  System.out.println(" i am in before test");
+	  System.setProperty("webdriver.chrome.driver","C:/Users/vinni/Downloads/chromedriver.exe");
+       driver=new ChromeDriver();
+      driver.get("https://www.amazon.in/");
+      driver.manage().window().maximize();
+      properties=new Properties();
+      File file =new File("resources/MyLocator.locator");
+      
+      try {
+		properties.load(new FileInputStream(file));
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
+  }
+  
+
+		@AfterTest
+		public void aftertest(){
+			System.out.println("i am in after test");
+			driver.quit();
+		}
+			  
+		@Test
+		public void testCase001() {
+			
+			System.out.println("i am in test001");
+			
+			driver.findElement(By.xpath("//*[@id='twotabsearchtextbox']")).sendKeys("vivo");
+			//driver.findElement(By.xpath("//input[@value='Go']")).click();
+			   try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					
+				}
+Assert.assertEquals(driver.findElement(By.xpath("//input[@value='Go']")).isDisplayed(), true);
+
+
+			   
+		}
+			  
+		@Test
+		public void testCase002(){
+			
+			   
+			System.out.println("i am in test002");
+			driver.findElement(By.xpath("//*[@id='twotabsearchtextbox']")).sendKeys("vivo");
+			driver.findElement(By.xpath("//*[@id='twotabsearchtextbox']")).clear();
+		//	driver.findElement(By.xpath("//input[@value='Go']")).click();
+			driver.findElement(By.xpath("//*[@id='twotabsearchtextbox']")).sendKeys("apple");
+			   try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			
+			
+		}
+			
+			
+		
 	
-	
-	
-	@Test
-	public void case2(){
-		
-		driver.findElement(By.xpath("//a[@class='nav-a'][contains(text(),'Customer Service')]")).click();
-        driver.findElement(By.xpath("//a[contains(text(),'Your Orders')]")).click();
-		   driver.findElement(By.xpath("//input[@name='email']")).sendKeys("vineethag207@gmail.com");
-		   driver.findElement(By.xpath("//input[@id='continue']")).click();
-		   driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[2]/input[1]")).sendKeys("august20");
-		   driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
-		   try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
-		   
-		
-		
-	}
-	@AfterTest
-	public void case3(){
-		driver.quit();
-		
-	}
 }

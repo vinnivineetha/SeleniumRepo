@@ -5,9 +5,9 @@
     <classes>
       <class name="org.sspart.mySeleniumClass.FirstTestngClass">
         <methods>
-          <include name="case1"/>
-          <include name="case2"/>
-          <include name="case3"/>
+          <include name="beforetest"/>
+          <include name="testCase001"/>
+          <include name="aftertest"/>
         </methods>
       </class> <!-- org.sspart.mySeleniumClass.FirstTestngClass -->
     </classes>

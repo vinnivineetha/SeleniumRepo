@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Selenium Class">
+  <test  name="amazon website Test1">
     <classes>
       <class name="org.sspart.mySeleniumClass.FirstTestngClass">
       <methods>
-      <include name="case4"/>
+      <include name="testcase001"></include>
+  
       </methods>
       </class>
     </classes>
-  </test> <!--amazon website-->
-</suite> <!-- Suite -->
+  </test> <!-- amazon website -->
+
+
+</suite> <!-- Selenium Class -->
+ 
