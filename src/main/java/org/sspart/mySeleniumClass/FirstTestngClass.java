@@ -43,6 +43,7 @@ public class FirstTestngClass  {
 	}
   }
   
+  
 
 		@AfterTest
 		public void aftertest(){
@@ -56,7 +57,7 @@ public class FirstTestngClass  {
 			System.out.println("i am in test001");
 			
 			driver.findElement(By.xpath("//*[@id='twotabsearchtextbox']")).sendKeys("vivo");
-			//driver.findElement(By.xpath("//input[@value='Go']")).click();
+			driver.findElement(By.xpath("//input[@value='Go']")).click();
 			   try {
 					Thread.sleep(3000);
 				} catch (InterruptedException e) {
@@ -66,9 +67,9 @@ public class FirstTestngClass  {
 				}
 Assert.assertEquals(driver.findElement(By.xpath("//input[@value='Go']")).isDisplayed(), true);
 
-
-			   
-		}
+    }
+		
+		
 			  
 		@Test
 		public void testCase002(){
@@ -88,8 +89,8 @@ Assert.assertEquals(driver.findElement(By.xpath("//input[@value='Go']")).isDispl
 			
 			
 		}
-			
-			
 		
+		
+			
+		}
 	
-}

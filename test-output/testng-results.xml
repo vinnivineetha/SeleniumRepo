@@ -1,29 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33345" started-at="2019-02-19T18:45:27Z" finished-at="2019-02-19T18:46:00Z">
+  <suite name="Default suite" duration-ms="97" started-at="2019-02-21T18:11:04Z" finished-at="2019-02-21T18:11:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33345" started-at="2019-02-19T18:45:27Z" finished-at="2019-02-19T18:46:00Z">
-      <class name="org.sspart.mySeleniumClass.FirstTestngClass">
-        <test-method status="PASS" signature="beforetest()[pri:0, instance:org.sspart.mySeleniumClass.FirstTestngClass@653222]" name="beforetest" is-config="true" duration-ms="25459" started-at="2019-02-19T18:45:27Z" finished-at="2019-02-19T18:45:52Z">
+    <test name="Default test" duration-ms="97" started-at="2019-02-21T18:11:04Z" finished-at="2019-02-21T18:11:04Z">
+      <class name="org.sspart.mySeleniumClass.Manufactures">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@101b7af]" name="beforetest" is-config="true" duration-ms="20" started-at="2019-02-21T18:11:04Z" finished-at="2019-02-21T18:11:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="testCase001()[pri:0, instance:org.sspart.mySeleniumClass.FirstTestngClass@653222]" name="testCase001" duration-ms="3554" started-at="2019-02-19T18:45:52Z" finished-at="2019-02-19T18:45:56Z">
+        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@101b7af]" name="manufactures" duration-ms="7" started-at="2019-02-21T18:11:04Z" data-provider="onePlus_Test" finished-at="2019-02-21T18:11:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@8806ef]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase001 -->
-        <test-method status="PASS" signature="testCase002()[pri:0, instance:org.sspart.mySeleniumClass.FirstTestngClass@653222]" name="testCase002" duration-ms="3284" started-at="2019-02-19T18:45:56Z" finished-at="2019-02-19T18:45:59Z">
+        </test-method> <!-- manufactures -->
+        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@101b7af]" name="manufactures" duration-ms="2" started-at="2019-02-21T18:11:04Z" data-provider="onePlus_Test" finished-at="2019-02-21T18:11:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@49835d]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase002 -->
-        <test-method status="PASS" signature="aftertest()[pri:0, instance:org.sspart.mySeleniumClass.FirstTestngClass@653222]" name="aftertest" is-config="true" duration-ms="895" started-at="2019-02-19T18:45:59Z" finished-at="2019-02-19T18:46:00Z">
+        </test-method> <!-- manufactures -->
+        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@101b7af]" name="manufactures" duration-ms="3" started-at="2019-02-21T18:11:04Z" data-provider="onePlus_Test" finished-at="2019-02-21T18:11:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@853265]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manufactures -->
+        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@101b7af]" name="manufactures" duration-ms="3" started-at="2019-02-21T18:11:04Z" data-provider="onePlus_Test" finished-at="2019-02-21T18:11:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1205a84]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manufactures -->
+        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@101b7af]" name="manufactures" duration-ms="5" started-at="2019-02-21T18:11:04Z" data-provider="onePlus_Test" finished-at="2019-02-21T18:11:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@10587f1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manufactures -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@101b7af]" name="aftertest" is-config="true" duration-ms="1" started-at="2019-02-21T18:11:04Z" finished-at="2019-02-21T18:11:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest -->
-      </class> <!-- org.sspart.mySeleniumClass.FirstTestngClass -->
+      </class> <!-- org.sspart.mySeleniumClass.Manufactures -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

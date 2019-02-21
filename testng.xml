@@ -6,6 +6,8 @@
       <class name="org.sspart.mySeleniumClass.FirstTestngClass">
       <methods>
       <include name="testcase001"></include>
+       
+      
   
       </methods>
       </class>

@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.sspart.mySeleniumClass.FirstTestngClass">
+      <class name="org.sspart.mySeleniumClass.Task">
         <methods>
-          <include name="beforetest"/>
-          <include name="testCase001"/>
+          <include name="testcase002"/>
+          <include name="testcase005"/>
+          <include name="testcase004"/>
           <include name="aftertest"/>
+          <include name="testcase001"/>
+          <include name="testcase003"/>
+          <include name="beforetest"/>
         </methods>
-      </class> <!-- org.sspart.mySeleniumClass.FirstTestngClass -->
+      </class> <!-- org.sspart.mySeleniumClass.Task -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
