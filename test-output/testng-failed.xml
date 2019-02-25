@@ -6,11 +6,8 @@
       <class name="org.sspart.mySeleniumClass.Task">
         <methods>
           <include name="testcase002"/>
-          <include name="testcase005"/>
           <include name="testcase004"/>
           <include name="aftertest"/>
-          <include name="testcase001"/>
-          <include name="testcase003"/>
           <include name="beforetest"/>
         </methods>
       </class> <!-- org.sspart.mySeleniumClass.Task -->
