@@ -1,76 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="81" started-at="2019-02-25T15:13:39Z" finished-at="2019-02-25T15:13:39Z">
+  <suite name="Default suite" duration-ms="17236" started-at="2019-02-27T18:31:54Z" finished-at="2019-02-27T18:32:11Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.sspart.mycucumberpackage.CucumberRunnerClass@1fffcd7]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="81" started-at="2019-02-25T15:13:39Z" finished-at="2019-02-25T15:13:39Z">
-      <class name="org.sspart.mySeleniumClass.Manufactures">
-        <test-method status="PASS" signature="beforetest()[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@11161c7]" name="beforetest" is-config="true" duration-ms="15" started-at="2019-02-25T15:13:39Z" finished-at="2019-02-25T15:13:39Z">
+    <test name="Default test" duration-ms="17236" started-at="2019-02-27T18:31:54Z" finished-at="2019-02-27T18:32:11Z">
+      <class name="org.sspart.mycucumberpackage.CucumberRunnerClass">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:org.sspart.mycucumberpackage.CucumberRunnerClass@1fffcd7]" name="setUpClass" is-config="true" duration-ms="369" started-at="2019-02-27T18:31:54Z" finished-at="2019-02-27T18:31:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@11161c7]" name="manufactures" duration-ms="6" started-at="2019-02-25T15:13:39Z" data-provider="onePlus_Test" finished-at="2019-02-25T15:13:39Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.sspart.mycucumberpackage.CucumberRunnerClass@1fffcd7]" name="feature" duration-ms="16691" started-at="2019-02-27T18:31:54Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-02-27T18:32:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@7dc304]]>
+                <![CDATA[Searching products]]>
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //h2[contains(text()='Apple iPhone X (64GB) - Silver']) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//h2[contains(text()='Apple iPhone X (64GB) - Silver'])' is not a valid XPath expression.
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VINNI-PC', ip: '192.168.100.5', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\vinni\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 3c4a996486ed38576e84173b404a2d99
+*** Element info: {Using=xpath, value=//h2[contains(text()='Apple iPhone X (64GB) - Silver'])}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //h2[contains(text()='Apple iPhone X (64GB) - Silver']) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//h2[contains(text()='Apple iPhone X (64GB) - Silver'])' is not a valid XPath expression.
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VINNI-PC', ip: '192.168.100.5', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\vinni\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 3c4a996486ed38576e84173b404a2d99
+*** Element info: {Using=xpath, value=//h2[contains(text()='Apple iPhone X (64GB) - Silver'])}
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //h2[contains(text()='Apple iPhone X (64GB) - Silver']) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//h2[contains(text()='Apple iPhone X (64GB) - Silver'])' is not a valid XPath expression.
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VINNI-PC', ip: '192.168.100.5', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\vinni\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 3c4a996486ed38576e84173b404a2d99
+*** Element info: {Using=xpath, value=//h2[contains(text()='Apple iPhone X (64GB) - Silver'])}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.sspart.myPages.TestBaseClass.isDisplayed(TestBaseClass.java:38)
+at org.sspart.myPages.ProductPage.verifyProduct(ProductPage.java:6)
+at org.sspart.mycucumberpackage.StepDefs.i_will_verify_whether_products_are_retrived_correctly_or_not(StepDefs.java:77)
+at ✽.And I will verify whether products are retrived correctly or not(AmazonProducts.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manufactures -->
-        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@11161c7]" name="manufactures" duration-ms="1" started-at="2019-02-25T15:13:39Z" data-provider="onePlus_Test" finished-at="2019-02-25T15:13:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@729b1e]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.sspart.mycucumberpackage.CucumberRunnerClass@1fffcd7]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2019-02-27T18:32:11Z" finished-at="2019-02-27T18:32:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manufactures -->
-        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@11161c7]" name="manufactures" duration-ms="1" started-at="2019-02-25T15:13:39Z" data-provider="onePlus_Test" finished-at="2019-02-25T15:13:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@bbd20a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- manufactures -->
-        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@11161c7]" name="manufactures" duration-ms="2" started-at="2019-02-25T15:13:39Z" data-provider="onePlus_Test" finished-at="2019-02-25T15:13:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@503868]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- manufactures -->
-        <test-method status="PASS" signature="manufactures([Ljava.lang.String;)[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@11161c7]" name="manufactures" duration-ms="1" started-at="2019-02-25T15:13:39Z" data-provider="onePlus_Test" finished-at="2019-02-25T15:13:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@95a785]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- manufactures -->
-        <test-method status="PASS" signature="aftertest()[pri:0, instance:org.sspart.mySeleniumClass.Manufactures@11161c7]" name="aftertest" is-config="true" duration-ms="1" started-at="2019-02-25T15:13:39Z" finished-at="2019-02-25T15:13:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftertest -->
-      </class> <!-- org.sspart.mySeleniumClass.Manufactures -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.sspart.mycucumberpackage.CucumberRunnerClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

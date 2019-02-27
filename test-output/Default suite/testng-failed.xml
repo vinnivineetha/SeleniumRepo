@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.sspart.mySeleniumClass.Task">
+      <class name="org.sspart.mycucumberpackage.CucumberRunnerClass">
         <methods>
-          <include name="testcase002"/>
-          <include name="testcase004"/>
-          <include name="aftertest"/>
-          <include name="beforetest"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- org.sspart.mySeleniumClass.Task -->
+      </class> <!-- org.sspart.mycucumberpackage.CucumberRunnerClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
